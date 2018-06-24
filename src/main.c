@@ -6,14 +6,14 @@ int main()
 	FILE *v_first_form = fopen("../v_first_form.txt", "r");
 	FILE *v_second_form = fopen("../v_second_form.txt", "r");
 	FILE *v_third_form = fopen("../v_third_form.txt", "r");
-	char **first = new char *[120];
-	char **second = new char *[120];
-	char **third = new char *[120];
+	char **first = (char **)malloc(120*sizeof(char *));
+	char **second = (char **)malloc(120*sizeof(char *));
+	char **third = (char **)malloc(120*sizeof(char *));
 	for(int i = 0; i < 120; i++)
 	{
-		first[i] = new char[15];
-		second[i] = new char[15];
-		third[i] = new char[15];
+		first[i] = (char *)malloc(15*sizeof(char));
+		second[i] = (char *)malloc(15*sizeof(char));
+		third[i] = (char *)malloc(15*sizeof(char));;
 	}
 	verbInit(first, v_first_form);
 	verbInit(second, v_second_form);
