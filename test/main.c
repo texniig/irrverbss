@@ -1,7 +1,7 @@
 #define CTEST_MAIN
 
 #include <ctest.h>
-#include "irverbs.h"
+#include <stdbool.h>
 
 bool isLetter(char a)
 {
