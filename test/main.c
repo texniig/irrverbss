@@ -1,14 +1,7 @@
 #define CTEST_MAIN
 
 #include <ctest.h>
-#include <stdbool.h>
-
-bool isLetter(char a)
-{
-    if(((int)a >= 65 && (int)a <= 90) || ((int)a >= 97 && (int)a <= 122))
-        return true;
-    return false;
-}
+#include "irverbs.h"
 
 CTEST(letter_check, correct_letter_check)
 {
